@@ -1,0 +1,3 @@
+/home/pcsdocker/Data/pcs2026/ESERCITAZIONE-1/build-esercitazione1/CMakeFiles/esercitazione1_meteo.dir
+/home/pcsdocker/Data/pcs2026/ESERCITAZIONE-1/build-esercitazione1/CMakeFiles/edit_cache.dir
+/home/pcsdocker/Data/pcs2026/ESERCITAZIONE-1/build-esercitazione1/CMakeFiles/rebuild_cache.dir
