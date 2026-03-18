@@ -1,0 +1,10 @@
+Esercitazione 2, esercizio 1
+(&y)[1]=0 riga 12 del programma è definita come undefined behaviour.
+
+0 =x
+ad[2] 0x7ffcc8728ea0
+x 0x7ffcc8728e60
+y 0x7ffcc8728e5c
+y+1 0x7ffcc8728e60
+
+osserviamo che la y+1 e la x si sovrappongono (essendo che il programma restituisce lo stesso indirizzo), quindi la x viene riscritta come 0.
