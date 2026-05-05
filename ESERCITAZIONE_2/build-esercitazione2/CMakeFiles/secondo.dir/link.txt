@@ -1,1 +1,0 @@
-/usr/bin/c++  -Wall -Wshadow -Wl,--dependency-file=CMakeFiles/secondo.dir/link.d CMakeFiles/secondo.dir/esercizio2.cpp.o -o secondo
