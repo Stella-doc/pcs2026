@@ -23,4 +23,7 @@ add_test(NAME test_quicksort COMMAND test_quicksort)
 add_executable(test_mergesort test_mergesort.cpp)
 add_test(NAME test_mergesort COMMAND test_mergesort)
 
+add_executable(test_modified_quicksort test_modified_quicksort.cpp)
+add_test(NAME test_modified_quicksort COMMAND test_modified_quicksort)
+
 enable_testing()

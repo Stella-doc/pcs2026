@@ -18,7 +18,8 @@ int test_bubblesort() {
         v.resize(size); 
         rf.fill(v, -100, 100); // riempi il vettore casualmente 
         bubble_sort(v); // Chiami la funzione
-        if (!std::is_sorted(v.begin(), v.end())) // SE NON è sortato
+        if (!std::is_sorted(v.begin(), v.end()))
+			std::cout<<"test fallito 1"<<"\n"; // SE NON è sortato
             return EXIT_FAILURE; // ALLORA ritorna il fallimento del test
     }
 
@@ -26,6 +27,7 @@ int test_bubblesort() {
     std::vector<std::string> vs = { "ciao", "polipo", "gatto", "si", "luna", "hey", "minimo", "test", "nove", "fiore"};
     bubble_sort(vs);
     if (!std::is_sorted(vs.begin(), vs.end()))
+		std::cout<< "test fallito"<< "\n";
         return EXIT_FAILURE; // ritorna il fallimento del test in caso di NON sort 
 
     return EXIT_SUCCESS; // Se arriva qui ritorni successo perché è andato tutto bene

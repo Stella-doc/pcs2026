@@ -17,12 +17,14 @@ int test_insertionsort() {
         rf.fill(v, -100, 100); 
         insertion_sort(v); 
         if (!std::is_sorted(v.begin(), v.end())) 
+			std::cout<<"test fallito 1"<<"\n";
             return EXIT_FAILURE; 
     }
 
     std::vector<std::string> vs = { "ciao", "polipo", "gatto", "si", "luna", "hey", "minimo", "test", "nove", "fiore"};
     insertion_sort(vs);
     if (!std::is_sorted(vs.begin(), vs.end()))
+		std::cout<<"test fallito 1"<<"\n";
         return EXIT_FAILURE; 
     return EXIT_SUCCESS; 
 }

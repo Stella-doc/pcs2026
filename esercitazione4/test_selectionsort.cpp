@@ -16,12 +16,14 @@ int test_selectionsort() {
         rf.fill(v, -100, 100); 
         selection_sort(v); 
         if (!std::is_sorted(v.begin(), v.end())) 
+			std::cout<<"test fallito 1"<<"\n";
             return EXIT_FAILURE; 
     }
 
     std::vector<std::string> vs = { "ciao", "polipo", "gatto", "si", "luna", "hey", "minimo", "test", "nove", "fiore"};
     selection_sort(vs);
     if (!std::is_sorted(vs.begin(), vs.end()))
+		std::cout<<"test fallito "<<"\n";
         return EXIT_FAILURE; 
     return EXIT_SUCCESS; 
 }

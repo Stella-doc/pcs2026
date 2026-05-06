@@ -158,3 +158,31 @@ quick_sort(std::vector<T>& v, int p, int r){ //con size_t da segmentation fault
 		quick_sort(v,q+1,r);
 	}
 }
+
+//modified quicksort
+template<typename T>
+void
+modified_quicksort(std::vector<T>& v, int p, int r, int soglia){ 
+
+	if (p<r){
+		int n=r-p+1;
+		
+		if (n<soglia){
+			std::vector<T> s(n); //vettore temporaneo
+			for (int i =0; i<n; i++){
+				s[i] = v[p+i]; 
+			}
+			insertion_sort(s); //riordino con insertion sort tutto cio sotto la soglia
+			
+			for (int i=0; i<n; i++){ //rimetto nel vettore originale la parte sotto la soglia già ordinata
+				v[p+i] = s[i];
+			}
+		}
+	
+		else{
+			int q = partition(v, p, r);
+			modified_quicksort(v, p, q - 1, soglia);
+            modified_quicksort(v, q + 1, r, soglia);
+		}
+	}
+}
